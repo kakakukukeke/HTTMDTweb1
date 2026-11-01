@@ -1,0 +1,83 @@
+[
+  {
+    "code": "N10-986B5A24",
+    "customer": {
+      "name": "Anh Quân Trần",
+      "phone": "0987654321",
+      "address": "208 lê thanh nghị, Thành phố Hà Nội"
+    },
+    "items": [
+      {
+        "id": 1,
+        "name": "iPhone 15 128GB",
+        "price": 19990000,
+        "qty": 1
+      }
+    ],
+    "subtotal": 19990000,
+    "discount": 1999000,
+    "promo": "STUDENT10",
+    "shipping": "Giao tiêu chuẩn (2-4 ngày)",
+    "shippingFee": 0,
+    "total": 17991000,
+    "payment": "Chuyển khoản (mô phỏng)",
+    "status": "pending",
+    "createdAt": "2026-11-02T01:42:14.692981"
+  },
+  {
+    "code": "N10-984190FA",
+    "customer": {
+      "name": "Anh Quân Trần",
+      "phone": "097654321",
+      "address": "208 lê thanh nghị, Thành phố Hà Nội"
+    },
+    "items": [
+      {
+        "id": 1,
+        "name": "iPhone 15 128GB",
+        "price": 19990000,
+        "qty": 1
+      },
+      {
+        "id": 2,
+        "name": "Galaxy S24 256GB",
+        "price": 18490000,
+        "qty": 1
+      }
+    ],
+    "subtotal": 38480000,
+    "discount": 3848000,
+    "promo": "STUDENT10",
+    "shipping": "Giao tiêu chuẩn (2-4 ngày)",
+    "shippingFee": 0,
+    "total": 34632000,
+    "payment": "Chuyển khoản",
+    "status": "processing",
+    "createdAt": "2026-11-02T00:56:36.218100"
+  },
+  {
+    "code": "N10-983E61C9",
+    "customer": {
+      "name": "tran anh quan",
+      "phone": "097654321",
+      "address": "208 lê thanh nghị, Thành phố Hà Nội"
+    },
+    "items": [
+      {
+        "id": 4,
+        "name": "Redmi Note 13",
+        "price": 5490000,
+        "qty": 1
+      }
+    ],
+    "subtotal": 5490000,
+    "discount": 0,
+    "promo": "",
+    "shipping": "Giao tiêu chuẩn (2-4 ngày)",
+    "shippingFee": 0,
+    "total": 5490000,
+    "payment": "Chuyển khoản",
+    "status": "delivered",
+    "createdAt": "2026-11-02T00:53:07.529351"
+  }
+]

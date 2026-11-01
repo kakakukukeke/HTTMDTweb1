@@ -1,0 +1,11 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Quản trị - TAQstore</title><link rel="stylesheet" href="/shared/base.css"><link rel="stylesheet" href="admin.css">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800;900&display=swap" rel="stylesheet"></head><body>
+<section id="login"><form id="lf" class="box"><div class="logo dark"><span class="lg">T</span>TAQ<em>store</em></div><h2>Đăng nhập quản trị</h2><label>Tài khoản<input name="username" value="admin"></label><label>Mật khẩu<input name="password" type="password"></label><p><button class="btn" style="width:100%">Đăng nhập</button></p></form></section>
+<div id="app" hidden>
+<aside class="sidebar"><div class="logo dark"><span class="lg">T</span>TAQ<em>store</em></div><p class="subt">Trang quản trị</p><nav id="tabs"></nav>
+<div class="helpbox"><b>Cần hỗ trợ?</b><br>Liên hệ nhóm phát triển TAQstore</div></aside>
+<div class="content"><header class="top"><div><p id="today"></p><h1 id="ttl"></h1></div><div class="user"><div class="av">AD</div><div class="who"><b>Quản trị viên</b><small>admin</small></div><button class="btn ghost" id="out">Đăng xuất</button></div></header>
+<main id="view"></main></div></div>
+<dialog id="dlg"><form id="pf" method="dialog"><h3 id="dt"></h3><div id="fields"></div><p><button class="btn">Lưu</button> <button type="button" class="btn ghost" id="cl">Hủy</button></p></form></dialog>
+<script src="/shared/api.js"></script><script src="admin.js"></script></body></html>

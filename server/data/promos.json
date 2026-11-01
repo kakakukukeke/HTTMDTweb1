@@ -1,0 +1,6 @@
+[
+  {"id": 1, "code": "STUDENT10", "name": "Student Tech Deals", "percent": 10, "minTotal": 5000000,
+   "start": "2026-01-01", "end": "2026-12-31", "active": true},
+  {"id": 2, "code": "FRESHMAN5", "name": "Freshman Welcome", "percent": 5, "minTotal": 0,
+   "start": "2026-01-01", "end": "2026-12-31", "active": true}
+]

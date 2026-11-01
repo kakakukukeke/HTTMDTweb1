@@ -1,0 +1,17 @@
+[
+  {"id": 1, "name": "Apple"},
+  {"id": 2, "name": "Samsung"},
+  {"id": 3, "name": "Xiaomi"},
+  {"id": 4, "name": "Redmi"},
+  {"id": 5, "name": "OPPO"},
+  {"id": 6, "name": "ASUS"},
+  {"id": 7, "name": "Lenovo"},
+  {"id": 8, "name": "Acer"},
+  {"id": 9, "name": "HP"},
+  {"id": 10, "name": "Dell"},
+  {"id": 11, "name": "Sony"},
+  {"id": 12, "name": "Anker"},
+  {"id": 13, "name": "Logitech"},
+  {"id": 14, "name": "Keychron"},
+  {"id": 15, "name": "Targus"}
+]

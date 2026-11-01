@@ -1,0 +1,14 @@
+[
+  {"id": 1, "type": "news", "slug": "chon-laptop-cho-sinh-vien", "title": "Chọn laptop cho sinh viên: 5 điều cần xem", "date": "2026-10-01",
+   "body": "Ngân sách, cấu hình, pin, cân nặng và bảo hành là năm yếu tố nên cân nhắc trước khi mua.\n\nSinh viên IT nên ưu tiên RAM 16GB và SSD 512GB nếu ngân sách cho phép."},
+  {"id": 2, "type": "news", "slug": "so-sanh-iphone-15-galaxy-s24", "title": "So sánh iPhone 15 và Galaxy S24", "date": "2026-10-10",
+   "body": "Hai mẫu điện thoại cao cấp với hệ điều hành, camera và giá bán khác nhau.\n\nBài viết mẫu phục vụ bài tập."},
+  {"id": 3, "type": "news", "slug": "phu-kien-cho-tan-sinh-vien", "title": "Phụ kiện nên mua cho tân sinh viên", "date": "2026-10-20",
+   "body": "Chuột không dây, tai nghe, sạc nhanh và túi đựng laptop là bộ phụ kiện cơ bản.\n\nXem thêm chương trình Freshman Welcome."},
+  {"id": 4, "type": "page", "slug": "gioi-thieu", "title": "Giới thiệu", "date": "",
+   "body": "TAQstore là website demo thương mại điện tử đa thương hiệu: điện thoại, laptop và phụ kiện công nghệ.\n\nĐây là bài tập học phần, không bán hàng thật."},
+  {"id": 5, "type": "page", "slug": "bao-hanh", "title": "Chính sách bảo hành", "date": "",
+   "body": "Bảo hành giả định 12 tháng cho thiết bị chính hãng.\n\nNội dung chỉ mang tính minh họa, nhóm không thực hiện bảo hành thật."},
+  {"id": 6, "type": "page", "slug": "doi-tra", "title": "Chính sách đổi trả", "date": "",
+   "body": "Đổi trả giả định trong 7 ngày nếu sản phẩm lỗi do nhà sản xuất.\n\nNội dung chỉ mang tính minh họa, không cam kết thực tế."}
+]

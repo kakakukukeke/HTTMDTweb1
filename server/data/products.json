@@ -1,0 +1,446 @@
+[
+  {
+    "id": 1,
+    "sku": "SP001",
+    "brand": "Apple",
+    "name": "iPhone 15 128GB",
+    "category": "phone",
+    "price": 19990000,
+    "oldPrice": 22990000,
+    "stock": 20,
+    "icon": "📱",
+    "image": "",
+    "featured": true,
+    "colors": [
+      "Đen",
+      "Bạc",
+      "Xanh"
+    ],
+    "origin": "Chính hãng, nhập khẩu (mô phỏng)",
+    "warranty": "12 tháng (mô phỏng)",
+    "desc": "iPhone 15 128GB - dữ liệu mẫu phục vụ bài tập.",
+    "specs": {
+      "Bộ nhớ": "128GB",
+      "Màn hình": "6.1 inch OLED",
+      "Pin": "4000 mAh",
+      "RAM": "8GB"
+    }
+  },
+  {
+    "id": 2,
+    "sku": "SP002",
+    "brand": "Samsung",
+    "name": "Galaxy S24 256GB",
+    "category": "phone",
+    "price": 18490000,
+    "oldPrice": 21990000,
+    "stock": 20,
+    "icon": "📱",
+    "image": "",
+    "featured": true,
+    "colors": [
+      "Đen",
+      "Bạc",
+      "Xanh"
+    ],
+    "origin": "Chính hãng, nhập khẩu (mô phỏng)",
+    "warranty": "12 tháng (mô phỏng)",
+    "desc": "Galaxy S24 256GB - dữ liệu mẫu phục vụ bài tập.",
+    "specs": {
+      "Màn hình": "6.1 inch OLED",
+      "RAM": "8GB",
+      "Bộ nhớ": "128GB",
+      "Pin": "4000 mAh"
+    }
+  },
+  {
+    "id": 3,
+    "sku": "SP003",
+    "brand": "Xiaomi",
+    "name": "Xiaomi 14T",
+    "category": "phone",
+    "price": 12990000,
+    "oldPrice": 0,
+    "stock": 20,
+    "icon": "📱",
+    "image": "",
+    "featured": false,
+    "colors": [
+      "Đen",
+      "Bạc",
+      "Xanh"
+    ],
+    "origin": "Chính hãng, nhập khẩu (mô phỏng)",
+    "warranty": "12 tháng (mô phỏng)",
+    "desc": "Xiaomi 14T - dữ liệu mẫu phục vụ bài tập.",
+    "specs": {
+      "Màn hình": "6.1 inch OLED",
+      "RAM": "8GB",
+      "Bộ nhớ": "128GB",
+      "Pin": "4000 mAh"
+    }
+  },
+  {
+    "id": 4,
+    "sku": "SP004",
+    "brand": "Redmi",
+    "name": "Redmi Note 13",
+    "category": "phone",
+    "price": 5490000,
+    "oldPrice": 5990000,
+    "stock": 20,
+    "icon": "📱",
+    "image": "",
+    "featured": true,
+    "colors": [
+      "Đen",
+      "Bạc",
+      "Xanh"
+    ],
+    "origin": "Chính hãng, nhập khẩu (mô phỏng)",
+    "warranty": "12 tháng (mô phỏng)",
+    "desc": "Redmi Note 13 - dữ liệu mẫu phục vụ bài tập.",
+    "specs": {
+      "Màn hình": "6.1 inch OLED",
+      "RAM": "8GB",
+      "Bộ nhớ": "128GB",
+      "Pin": "4000 mAh"
+    }
+  },
+  {
+    "id": 5,
+    "sku": "SP005",
+    "brand": "OPPO",
+    "name": "OPPO Reno11 F",
+    "category": "phone",
+    "price": 8490000,
+    "oldPrice": 0,
+    "stock": 20,
+    "icon": "📱",
+    "image": "",
+    "featured": false,
+    "colors": [
+      "Đen",
+      "Bạc",
+      "Xanh"
+    ],
+    "origin": "Chính hãng, nhập khẩu (mô phỏng)",
+    "warranty": "12 tháng (mô phỏng)",
+    "desc": "OPPO Reno11 F - dữ liệu mẫu phục vụ bài tập.",
+    "specs": {
+      "Màn hình": "6.1 inch OLED",
+      "RAM": "8GB",
+      "Bộ nhớ": "128GB",
+      "Pin": "4000 mAh"
+    }
+  },
+  {
+    "id": 6,
+    "sku": "SP006",
+    "brand": "Apple",
+    "name": "MacBook Air M2 13\"",
+    "category": "laptop",
+    "price": 24990000,
+    "oldPrice": 27990000,
+    "stock": 20,
+    "icon": "💻",
+    "image": "",
+    "featured": true,
+    "colors": [
+      "Đen",
+      "Bạc",
+      "Xanh"
+    ],
+    "origin": "Chính hãng, nhập khẩu (mô phỏng)",
+    "warranty": "12 tháng (mô phỏng)",
+    "desc": "MacBook Air M2 13\" - dữ liệu mẫu phục vụ bài tập.",
+    "specs": {
+      "CPU": "Core i5 / Ryzen 5 / Apple M",
+      "RAM": "8GB",
+      "Ổ cứng": "512GB SSD",
+      "Màn hình": "14-15.6 inch"
+    }
+  },
+  {
+    "id": 7,
+    "sku": "SP007",
+    "brand": "ASUS",
+    "name": "ASUS Vivobook 15",
+    "category": "laptop",
+    "price": 13990000,
+    "oldPrice": 0,
+    "stock": 20,
+    "icon": "💻",
+    "image": "",
+    "featured": true,
+    "colors": [
+      "Đen",
+      "Bạc",
+      "Xanh"
+    ],
+    "origin": "Chính hãng, nhập khẩu (mô phỏng)",
+    "warranty": "12 tháng (mô phỏng)",
+    "desc": "ASUS Vivobook 15 - dữ liệu mẫu phục vụ bài tập.",
+    "specs": {
+      "CPU": "Core i5 / Ryzen 5 / Apple M",
+      "RAM": "8GB",
+      "Ổ cứng": "512GB SSD",
+      "Màn hình": "14-15.6 inch"
+    }
+  },
+  {
+    "id": 8,
+    "sku": "SP008",
+    "brand": "Lenovo",
+    "name": "Lenovo IdeaPad Slim 3",
+    "category": "laptop",
+    "price": 12490000,
+    "oldPrice": 0,
+    "stock": 20,
+    "icon": "💻",
+    "image": "",
+    "featured": false,
+    "colors": [
+      "Đen",
+      "Bạc",
+      "Xanh"
+    ],
+    "origin": "Chính hãng, nhập khẩu (mô phỏng)",
+    "warranty": "12 tháng (mô phỏng)",
+    "desc": "Lenovo IdeaPad Slim 3 - dữ liệu mẫu phục vụ bài tập.",
+    "specs": {
+      "CPU": "Core i5 / Ryzen 5 / Apple M",
+      "RAM": "8GB",
+      "Ổ cứng": "512GB SSD",
+      "Màn hình": "14-15.6 inch"
+    }
+  },
+  {
+    "id": 9,
+    "sku": "SP009",
+    "brand": "Acer",
+    "name": "Acer Aspire 5",
+    "category": "laptop",
+    "price": 11990000,
+    "oldPrice": 12990000,
+    "stock": 20,
+    "icon": "💻",
+    "image": "",
+    "featured": false,
+    "colors": [
+      "Đen",
+      "Bạc",
+      "Xanh"
+    ],
+    "origin": "Chính hãng, nhập khẩu (mô phỏng)",
+    "warranty": "12 tháng (mô phỏng)",
+    "desc": "Acer Aspire 5 - dữ liệu mẫu phục vụ bài tập.",
+    "specs": {
+      "CPU": "Core i5 / Ryzen 5 / Apple M",
+      "RAM": "8GB",
+      "Ổ cứng": "512GB SSD",
+      "Màn hình": "14-15.6 inch"
+    }
+  },
+  {
+    "id": 10,
+    "sku": "SP010",
+    "brand": "HP",
+    "name": "HP Pavilion 14",
+    "category": "laptop",
+    "price": 14490000,
+    "oldPrice": 0,
+    "stock": 20,
+    "icon": "💻",
+    "image": "",
+    "featured": false,
+    "colors": [
+      "Đen",
+      "Bạc",
+      "Xanh"
+    ],
+    "origin": "Chính hãng, nhập khẩu (mô phỏng)",
+    "warranty": "12 tháng (mô phỏng)",
+    "desc": "HP Pavilion 14 - dữ liệu mẫu phục vụ bài tập.",
+    "specs": {
+      "CPU": "Core i5 / Ryzen 5 / Apple M",
+      "RAM": "8GB",
+      "Ổ cứng": "512GB SSD",
+      "Màn hình": "14-15.6 inch"
+    }
+  },
+  {
+    "id": 11,
+    "sku": "SP011",
+    "brand": "Dell",
+    "name": "Dell Inspiron 15",
+    "category": "laptop",
+    "price": 15990000,
+    "oldPrice": 0,
+    "stock": 20,
+    "icon": "💻",
+    "image": "",
+    "featured": false,
+    "colors": [
+      "Đen",
+      "Bạc",
+      "Xanh"
+    ],
+    "origin": "Chính hãng, nhập khẩu (mô phỏng)",
+    "warranty": "12 tháng (mô phỏng)",
+    "desc": "Dell Inspiron 15 - dữ liệu mẫu phục vụ bài tập.",
+    "specs": {
+      "CPU": "Core i5 / Ryzen 5 / Apple M",
+      "RAM": "8GB",
+      "Ổ cứng": "512GB SSD",
+      "Màn hình": "14-15.6 inch"
+    }
+  },
+  {
+    "id": 12,
+    "sku": "SP012",
+    "brand": "Sony",
+    "name": "Tai nghe Bluetooth chống ồn",
+    "category": "accessory",
+    "price": 1290000,
+    "oldPrice": 1590000,
+    "stock": 20,
+    "icon": "🎧",
+    "image": "",
+    "featured": true,
+    "colors": [
+      "Đen",
+      "Bạc",
+      "Xanh"
+    ],
+    "origin": "Chính hãng, nhập khẩu (mô phỏng)",
+    "warranty": "12 tháng (mô phỏng)",
+    "desc": "Tai nghe Bluetooth chống ồn - dữ liệu mẫu phục vụ bài tập.",
+    "specs": {
+      "Kết nối": "USB-C / Bluetooth",
+      "Tương thích": "Điện thoại, laptop"
+    }
+  },
+  {
+    "id": 13,
+    "sku": "SP013",
+    "brand": "Anker",
+    "name": "Sạc nhanh 65W",
+    "category": "accessory",
+    "price": 690000,
+    "oldPrice": 0,
+    "stock": 20,
+    "icon": "🔌",
+    "image": "",
+    "featured": false,
+    "colors": [
+      "Đen",
+      "Bạc",
+      "Xanh"
+    ],
+    "origin": "Chính hãng, nhập khẩu (mô phỏng)",
+    "warranty": "12 tháng (mô phỏng)",
+    "desc": "Sạc nhanh 65W - dữ liệu mẫu phục vụ bài tập.",
+    "specs": {
+      "Kết nối": "USB-C / Bluetooth",
+      "Tương thích": "Điện thoại, laptop"
+    }
+  },
+  {
+    "id": 14,
+    "sku": "SP014",
+    "brand": "Logitech",
+    "name": "Chuột không dây M331",
+    "category": "accessory",
+    "price": 350000,
+    "oldPrice": 0,
+    "stock": 20,
+    "icon": "🖱️",
+    "image": "",
+    "featured": false,
+    "colors": [
+      "Đen",
+      "Bạc",
+      "Xanh"
+    ],
+    "origin": "Chính hãng, nhập khẩu (mô phỏng)",
+    "warranty": "12 tháng (mô phỏng)",
+    "desc": "Chuột không dây M331 - dữ liệu mẫu phục vụ bài tập.",
+    "specs": {
+      "Kết nối": "USB-C / Bluetooth",
+      "Tương thích": "Điện thoại, laptop"
+    }
+  },
+  {
+    "id": 15,
+    "sku": "SP015",
+    "brand": "Keychron",
+    "name": "Bàn phím cơ K2",
+    "category": "accessory",
+    "price": 1890000,
+    "oldPrice": 0,
+    "stock": 20,
+    "icon": "⌨️",
+    "image": "",
+    "featured": false,
+    "colors": [
+      "Đen",
+      "Bạc",
+      "Xanh"
+    ],
+    "origin": "Chính hãng, nhập khẩu (mô phỏng)",
+    "warranty": "12 tháng (mô phỏng)",
+    "desc": "Bàn phím cơ K2 - dữ liệu mẫu phục vụ bài tập.",
+    "specs": {
+      "Kết nối": "USB-C / Bluetooth",
+      "Tương thích": "Điện thoại, laptop"
+    }
+  },
+  {
+    "id": 16,
+    "sku": "SP016",
+    "brand": "Targus",
+    "name": "Túi đựng laptop 15.6\"",
+    "category": "accessory",
+    "price": 450000,
+    "oldPrice": 0,
+    "stock": 20,
+    "icon": "💼",
+    "image": "",
+    "featured": false,
+    "colors": [
+      "Đen",
+      "Bạc",
+      "Xanh"
+    ],
+    "origin": "Chính hãng, nhập khẩu (mô phỏng)",
+    "warranty": "12 tháng (mô phỏng)",
+    "desc": "Túi đựng laptop 15.6\" - dữ liệu mẫu phục vụ bài tập.",
+    "specs": {
+      "Kết nối": "USB-C / Bluetooth",
+      "Tương thích": "Điện thoại, laptop"
+    }
+  },
+  {
+    "name": "Ipad kid",
+    "sku": "IPK1124",
+    "brand": "Apple",
+    "category": "phone",
+    "price": 20000000,
+    "oldPrice": 15000000,
+    "stock": 20,
+    "colors": [
+      "Đen",
+      "Bạc",
+      "Xanh"
+    ],
+    "specs": {},
+    "origin": "Chính hãng, nhập khẩu (mô phỏng)",
+    "warranty": "12 tháng (mô phỏng)",
+    "image": "",
+    "desc": "",
+    "featured": false,
+    "icon": "📱",
+    "id": 17
+  }
+]

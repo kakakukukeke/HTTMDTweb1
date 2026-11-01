@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "slug": "phone",
+    "name": "Điện thoại"
+  },
+  {
+    "id": 2,
+    "slug": "laptop",
+    "name": "Laptop"
+  },
+  {
+    "id": 3,
+    "slug": "accessory",
+    "name": "Phụ kiện công nghệ"
+  },
+  {
+    "name": "Tai nghe",
+    "slug": "headphone",
+    "id": 4
+  }
+]

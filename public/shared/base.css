@@ -1,0 +1,16 @@
+:root{--red:#df3037;--red-d:#c4212b;--bg:#fbf7f1;--ink:#2d2523;--line:#eaded4;--mut:#917e73;--soft:#fff0ed;--cream:#f6e6d8;--gold:#ffce81;--sand:#fff7e9;--ok:#39834c;--card:#fff}
+*{box-sizing:border-box}body{margin:0;font:15px/1.5 "Be Vietnam Pro",system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+h1,h2,h3{line-height:1.2;margin:0;font-weight:800}button,input,select,textarea{font:inherit}a{color:var(--red)}
+.btn{background:var(--red);color:#fff;border:0;border-radius:10px;padding:.6rem 1.1rem;cursor:pointer;font-weight:700;box-shadow:0 6px 14px #df303726;transition:background .15s}
+.btn:hover{background:var(--red-d)}.btn.alt{background:var(--red)}
+.btn.ghost{background:#fff;color:var(--ink);border:1px solid var(--line);box-shadow:none}.btn.ghost:hover{background:var(--bg)}
+.btn.red{background:#fff;color:var(--red);border:1px solid #f2c9c3;box-shadow:none}.btn.red:hover{background:var(--soft)}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.btn:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,button:focus-visible{outline:3px solid #2457F5;outline-offset:2px}
+input,select,textarea{width:100%;padding:.6rem .75rem;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}
+label{display:block;font-size:.85rem;color:var(--mut);margin:.7rem 0 .2rem}
+.wrap{max-width:1280px;margin:0 auto;padding:0 1rem}
+.toast{position:fixed;bottom:1rem;left:50%;transform:translateX(-50%);background:#241d1c;color:#fff;padding:.7rem 1.1rem;border-radius:99px;z-index:99;font-weight:600}
+.logo{display:inline-flex;align-items:center;gap:.5rem;font-size:1.3rem;font-weight:900;letter-spacing:-.02em;text-decoration:none}
+.logo .lg{display:grid;place-items:center;width:36px;height:36px;border-radius:10px;background:#fff;color:var(--red);font-size:1.2rem}
+.logo em{font-style:normal;font-weight:400}

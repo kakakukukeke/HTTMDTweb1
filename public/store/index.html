@@ -1,0 +1,21 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TAQstore - Mua sắm công nghệ dễ dàng</title><link rel="stylesheet" href="/shared/base.css"><link rel="stylesheet" href="store.css">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800;900&display=swap" rel="stylesheet"></head><body>
+<div class="topbar">Miễn phí giao tiêu chuẩn cho đơn từ 5.000.000đ · Đổi trả trong 7 ngày (mô phỏng)</div>
+<header><div class="wrap bar"><a class="logo" href="#/"><span class="lg">T</span>TAQ<em>store</em></a>
+<div class="catwrap"><button class="catbtn" id="catBtn" aria-expanded="false">☰ Danh mục ▾</button><div id="catMenu" hidden></div></div>
+<div class="search"><span aria-hidden="true">🔍</span><input id="q" type="search" placeholder="Bạn muốn tìm gì hôm nay?" aria-label="Tìm kiếm sản phẩm"></div>
+<button class="cartbtn" id="cartBtn">🛒 Giỏ hàng <span class="badge" id="cnt">0</span></button></div>
+<nav class="subnav" aria-label="Điều hướng chính"><div class="wrap"><a href="#/">Cửa hàng</a><a href="#/news">Tin tức</a><a href="#/contact">Liên hệ</a><a href="#/track">Tra cứu đơn hàng</a></div></nav></header>
+<div class="wrap crumb" id="crumb"></div>
+<main class="wrap" id="app"></main>
+<footer class="site-footer"><div class="wrap"><div class="footer-main">
+<section class="footer-brand"><a class="logo" href="#/" aria-label="TAQstore, về trang chủ"><span class="lg">T</span>TAQ<em>store</em></a><p>Cùng bạn chọn lựa thiết bị công nghệ phù hợp cho học tập, công việc và cuộc sống mỗi ngày.</p><span class="footer-note">Website mô phỏng phục vụ học tập</span></section>
+<section class="footer-col"><h2>Khám phá</h2><a href="#/">Cửa hàng</a><a href="#/news">Tin tức công nghệ</a><a href="#/">Điện thoại &amp; phụ kiện</a><a href="#/">Laptop</a></section>
+<section class="footer-col"><h2>Hỗ trợ khách hàng</h2><a href="#/track">Tra cứu đơn hàng</a><a href="#/contact">Liên hệ hỗ trợ</a><span>Hỗ trợ mỗi ngày · 8:00 – 22:00</span><span>Giao hàng tiêu chuẩn 2–4 ngày (mô phỏng)</span></section>
+<section class="footer-col"><h2>Thanh toán &amp; chính sách</h2><span>Thanh toán khi nhận hàng</span><span>Chuyển khoản minh họa</span><span>Đổi trả trong 7 ngày (mô phỏng)</span><span>Bảo hành theo thông tin sản phẩm</span></section>
+</div><div class="footer-bottom"><span>© 2026 TAQstore · Website demo học phần, không bán hàng thật.</span><a href="#/">Trở về đầu trang ↑</a></div></div></footer>
+<aside id="cart" hidden><div class="panel"><h3>Giỏ hàng</h3><div id="lines"></div>
+<div class="row"><input id="promo" placeholder="Mã giảm giá (VD: STUDENT10)" aria-label="Mã giảm giá"><button class="btn ghost" id="applyPromo" type="button">Áp dụng</button></div>
+<div id="sum"></div><p><a class="btn" href="#/checkout" id="goCheckout">Tiến hành đặt hàng</a> <button type="button" class="btn ghost" id="closeCart">Đóng</button></p></div></aside>
+<script src="/shared/api.js"></script><script src="store.js"></script></body></html>
