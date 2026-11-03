@@ -79,3 +79,86 @@ footer{background:#241d1c;color:#d7c7bc;padding:1.5rem 0}footer b{color:#fff;mar
 @media(max-width:900px){.footer-main{grid-template-columns:repeat(2,minmax(0,1fr));gap:2rem}.footer-brand{grid-column:span 2}}
 @media(max-width:700px){.subnav a{font-size:.78rem;padding:.55rem .3rem;min-height:44px}.footer-main{gap:1.6rem 1.2rem}.site-footer{padding-top:2.4rem}}
 @media(max-width:480px){.subnav .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}.subnav a:nth-child(3){border-left:1px solid #ffffff20}.footer-main{grid-template-columns:1fr}.footer-brand{grid-column:auto}.footer-bottom{align-items:flex-start;flex-direction:column}}
+
+/* Polished motion and a continuous left-to-right brand marquee */
+.brand-strip{overflow:hidden;background:#fff;border-block:1px solid var(--line);padding:1.1rem 0 1.35rem;margin:1rem 0 2rem}
+.brand-title{text-align:center;color:var(--mut);font-size:.68rem;font-weight:800;letter-spacing:.18em;margin:0 0 .75rem}
+.brand-window{overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.brand-track{display:flex;width:max-content;animation:brand-flow 34s linear infinite;gap:clamp(2rem,5vw,5rem);align-items:center}
+.brand-track span{font-size:1rem;font-weight:900;letter-spacing:.08em;color:#887a73;white-space:nowrap;transition:color .2s,transform .2s}
+.brand-track span:hover{color:var(--red);transform:translateY(-2px)}
+.brand-strip:hover .brand-track{animation-play-state:paused}
+@keyframes brand-flow{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+.brand-filter{display:flex;align-items:center;gap:.9rem;overflow:hidden;margin-top:1rem;padding:.65rem .8rem;background:#fff;border:1px solid var(--line);border-radius:15px}
+.brand-filter-title{flex:0 0 auto;color:var(--mut);font-size:.75rem;font-weight:800}
+.brand-filter .brand-window{min-width:0;flex:1;mask-image:linear-gradient(90deg,#000 0%,#000 90%,transparent)}
+.brand-filter .brand-track{gap:.5rem;animation-duration:30s}
+.brand-chip{flex:0 0 auto;border:1px solid #f0e9e4;background:#faf8f6;color:#51433d;border-radius:999px;padding:.42rem .85rem;font-size:.78rem;font-weight:700;white-space:nowrap;cursor:pointer;transition:background .2s,color .2s,border-color .2s,transform .2s}
+.brand-chip:hover,.brand-chip.on{background:var(--red);border-color:var(--red);color:#fff}
+@media(max-width:700px){.brand-filter{gap:.55rem;padding:.55rem}.brand-filter-title{font-size:.68rem}.brand-chip{padding:.4rem .7rem}}
+.hero{isolation:isolate;transition:box-shadow .3s,transform .3s}.hero:hover{box-shadow:0 18px 42px #56352218;transform:translateY(-2px)}
+.hero-photo{transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .5s}.hero:hover .hero-photo{transform:scale(1.035);filter:saturate(1.08)}
+.tile,.pill,.catbtn,.cartbtn,.logo,.subnav a,.list a,.box,.side,.detail,.checkout-form,.checkout-summary,.payment-card{transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease,background-color .22s ease}
+.tile:hover,.list a:hover{transform:translateY(-3px);box-shadow:0 10px 24px #4a302014}
+.pill:hover{border-color:var(--red);transform:translateY(-1px)}
+.card{animation:card-enter .45s both;animation-delay:calc(var(--i,0)*35ms)}
+.grid .card:nth-child(12n+1){--i:0}.grid .card:nth-child(12n+2){--i:1}.grid .card:nth-child(12n+3){--i:2}.grid .card:nth-child(12n+4){--i:3}.grid .card:nth-child(12n+5){--i:4}.grid .card:nth-child(12n+6){--i:5}.grid .card:nth-child(12n+7){--i:6}.grid .card:nth-child(12n+8){--i:7}.grid .card:nth-child(12n+9){--i:8}.grid .card:nth-child(12n+10){--i:9}.grid .card:nth-child(12n+11){--i:10}.grid .card:nth-child(12n+12){--i:11}
+@keyframes card-enter{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+button,.btn{transition:transform .18s ease,background-color .18s ease,box-shadow .18s ease}
+button:not(:disabled):active,.btn:not(:disabled):active{transform:scale(.97)}
+#cart{backdrop-filter:blur(4px);animation:veil-in .2s ease}.panel{animation:panel-in .28s cubic-bezier(.2,.8,.2,1)}
+@keyframes veil-in{from{opacity:0}to{opacity:1}}@keyframes panel-in{from{transform:translateX(32px);opacity:.7}to{transform:translateX(0);opacity:1}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+/* Richer storefront motion */
+html{scroll-behavior:smooth}
+#app{animation:page-arrive .42s cubic-bezier(.2,.7,.2,1) backwards}
+@keyframes page-arrive{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.hero{animation:hero-arrive .65s cubic-bezier(.2,.75,.25,1) backwards}
+.hero .kick,.hero h1,.hero>div>p:not(.kick),.hero .btn{animation:content-arrive .55s both}
+.hero h1{animation-delay:.08s}.hero>div>p:not(.kick){animation-delay:.15s}.hero .btn{animation-delay:.22s}
+@keyframes hero-arrive{from{opacity:0;transform:translateY(14px) scale(.99)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes content-arrive{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.blob{animation:blob-drift 8s ease-in-out infinite alternate;transform-origin:center}
+@keyframes blob-drift{from{transform:translate3d(0,0,0) scale(.96)}to{transform:translate3d(-16px,12px,0) scale(1.06)}}
+.dev{animation:device-float 4.5s ease-in-out infinite}
+@keyframes device-float{0%,100%{translate:0 0;rotate:0deg}50%{translate:0 -9px;rotate:-2deg}}
+.tiles .tile{animation:tile-arrive .45s both;animation-delay:calc(var(--tile-i,0)*70ms)}
+.tiles .tile:nth-child(2){--tile-i:1}.tiles .tile:nth-child(3){--tile-i:2}
+@keyframes tile-arrive{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.sechd{animation:content-arrive .5s both}
+.card{animation:card-enter .42s ease-out backwards;animation-delay:calc(var(--i,0)*45ms)}
+.card .pic img{transition:transform .55s cubic-bezier(.2,.7,.2,1),filter .35s}
+.card:hover .pic img{transform:scale(1.07);filter:saturate(1.1)}
+.card .tag{animation:tag-pop .35s .2s both}
+@keyframes tag-pop{from{opacity:0;transform:scale(.75)}to{opacity:1;transform:scale(1)}}
+.card .add{position:relative;overflow:hidden}
+.card .add::after,.btn:not(.ghost)::after{content:"";position:absolute;inset:0;transform:translateX(-130%);background:linear-gradient(110deg,transparent 25%,#ffffff35 48%,transparent 70%);transition:transform .55s;pointer-events:none}
+.card .add:hover::after,.btn:not(.ghost):hover::after{transform:translateX(130%)}
+.brand-filter{animation:content-arrive .5s .12s backwards}
+.brand-chip{transition:background .22s,color .22s,border-color .22s,transform .22s,box-shadow .22s}
+.brand-chip:hover{transform:translateY(-2px);box-shadow:0 5px 12px #df30372b}
+.brand-chip{width:58px;height:46px;padding:7px 11px;border-radius:12px;background:#fff;display:grid;place-items:center}
+.brand-chip img{display:block;width:32px;height:32px;object-fit:contain;transition:transform .25s,filter .25s}
+.brand-filter .brand-track{animation:brand-flow 26s linear infinite;will-change:transform}
+.brand-chip:hover img{transform:scale(1.12)}
+.brand-chip.on{background:#fff;border-color:var(--red);box-shadow:0 0 0 2px #df30371a}
+.brand-chip.on img{filter:drop-shadow(0 1px 2px #0002)}
+.side,.box{animation:content-arrive .5s .08s backwards}
+.detail,.article,.formbox,.checkout-form,.checkout-summary,.payment-card,.success-card{animation:content-arrive .45s ease-out both}
+.detail .pic img{transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.detail .pic:hover img{transform:scale(1.035)}
+input,select,textarea{transition:border-color .2s,box-shadow .2s,background-color .2s}
+input:focus,select:focus,textarea:focus{border-color:#e78b88;box-shadow:0 0 0 4px #df30371a}
+.btn{position:relative;overflow:hidden;transition:transform .2s,background .2s,box-shadow .2s}
+.btn:hover{box-shadow:0 8px 20px #df303733;transform:translateY(-1px)}
+.logo .lg{transition:transform .3s cubic-bezier(.2,.8,.2,1),border-radius .3s}
+.logo:hover .lg{transform:rotate(-8deg) scale(1.08);border-radius:13px}
+.cartbtn:hover .badge{animation:badge-pop .35s ease}
+@keyframes badge-pop{50%{transform:scale(1.25)}}
+.toast{animation:toast-arrive .28s cubic-bezier(.2,.8,.2,1) both}
+@keyframes toast-arrive{from{opacity:0;transform:translate(-50%,12px) scale(.97)}to{opacity:1;transform:translate(-50%,0) scale(1)}}
+.success-mark{animation:success-pop .5s cubic-bezier(.2,.8,.2,1) both}
+@keyframes success-pop{0%{opacity:0;transform:scale(.5) rotate(-20deg)}70%{transform:scale(1.12) rotate(5deg)}100%{opacity:1;transform:scale(1) rotate(0)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}#app,.hero,.hero .kick,.hero h1,.hero>div>p,.hero .btn,.blob,.dev,.tiles .tile,.sechd,.card,.card .tag,.brand-filter,.side,.box,.detail,.article,.formbox,.checkout-form,.checkout-summary,.payment-card,.success-card,.success-mark,.toast{animation:none!important}.hero:hover,.card:hover,.tile:hover,.list a:hover,.btn:hover,.brand-chip:hover{transform:none!important}}
+@media(prefers-reduced-motion:reduce){.brand-filter .brand-track{animation:brand-flow 26s linear infinite!important}}

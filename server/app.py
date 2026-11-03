@@ -268,7 +268,7 @@ def serve(folder, f):
 @app.get("/admin/")
 def admin_page(): return serve("admin", "index.html")
 @app.get("/admin/<path:f>")
-def admin_files(f): return serve("admin", f)git --version
+def admin_files(f): return serve("admin", f)
 @app.get("/shared/<path:f>")
 def shared_files(f): return serve("shared", f)
 @app.get("/")
