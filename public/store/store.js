@@ -3,6 +3,7 @@ const F={cat:'',brand:'',price:''},PR={'':'Mọi mức giá','0-5000000':'Dướ
 let q='',cart=JSON.parse(localStorage.getItem('n10_cart')||'[]'),all=[],cats=[],brands=[],ships=[],promo=null,selectedShip='standard';
 const IC={phone:'📱',laptop:'💻',accessory:'🎧'};
 const photos={phone:['photo-1511707171634-5f897ff02aa9','photo-1592899677977-9c10ca588bbd','photo-1598327105666-5b89351aff97'],laptop:['photo-1517336714731-489689fd1ca8','photo-1496181133206-80ce9b88a853','photo-1588872657578-7efd1f1555ed'],accessory:['photo-1505740420928-5e560c06d30e','photo-1546435770-a3e426bf472b','photo-1583863788434-e58a36330cf0','photo-1527864550417-7fd91fc51a46','photo-1587829741301-dc798b83add3','photo-1622560480654-d96214fdc887']};
+const brandDomains={apple:'apple.com',samsung:'samsung.com',xiaomi:'mi.com',redmi:'mi.com',oppo:'oppo.com',asus:'asus.com',lenovo:'lenovo.com',acer:'acer.com',hp:'hp.com',dell:'dell.com',sony:'sony.com',anker:'anker.com',logitech:'logitech.com',keychron:'keychron.com',targus:'targus.com'};
 const productPhoto=p=>`https://images.unsplash.com/${photos[p.category]?.[(p.id-1)%photos[p.category].length]||photos.phone[0]}?auto=format&fit=crop&w=720&q=85`;
 const sale=p=>p.oldPrice>p.price?`<span class="old">${vnd(p.oldPrice)}</span>`:'';
 const card=p=>`<article class="card"><a href="#/product/${p.id}"><div class="pic t-${esc(p.category)}">${p.oldPrice>p.price?`<span class="tag">-${Math.round(100-p.price*100/p.oldPrice)}%</span>`:''}<img src="${esc(p.image||productPhoto(p))}" alt="${esc(p.name)}" loading="lazy"></div>
@@ -26,7 +27,9 @@ async function home(){
  `<div class="sechd" id="products"><div><p class="kick">Mua sắm</p><h2>${filtered?'Kết quả':'Tất cả sản phẩm'}</h2></div></div>
  <div class="filters">${[['',"Tất cả"],...cats.map(c=>[c.slug,c.name])].map(([k,v])=>`<button class="pill ${k===F.cat?'on':''}" data-cat="${esc(k)}">${esc(v)}</button>`).join('')}
  <select data-f="brand" aria-label="Thương hiệu"><option value="">Mọi thương hiệu</option>${brands.map(b=>`<option ${b.name===F.brand?'selected':''}>${esc(b.name)}</option>`).join('')}</select>
- <select data-f="price" aria-label="Mức giá">${Object.entries(PR).map(([k,v])=>`<option value="${k}" ${k===F.price?'selected':''}>${v}</option>`).join('')}</select></div>${grid(list)}`}
+ <select data-f="price" aria-label="Mức giá">${Object.entries(PR).map(([k,v])=>`<option value="${k}" ${k===F.price?'selected':''}>${v}</option>`).join('')}</select></div>${grid(list)}`;
+ if(!filtered){const showcase=app.querySelector('.top3 > div');showcase?.insertAdjacentHTML('beforeend',`<div class="brand-filter" aria-label="Lọc theo thương hiệu"><span class="brand-filter-title">Thương hiệu</span><div class="brand-window"><div class="brand-track">${[...brands,...brands].map(b=>{const domain=brandDomains[b.name.toLowerCase()]||`${b.name.toLowerCase()}.com`;return`<button class="brand-chip ${F.brand===b.name?'on':''}" type="button" data-brand="${esc(b.name)}" aria-label="Lọc theo ${esc(b.name)}" title="${esc(b.name)}"><img src="https://www.google.com/s2/favicons?domain=${domain}&sz=96" alt="" loading="lazy"></button>`}).join('')}</div></div></div>`)}
+}
 function product(id){const p=all.find(x=>x.id==id);if(!p)return app.innerHTML='<p>Không tìm thấy sản phẩm.</p>';crumb((cats.find(c=>c.slug===p.category)||{}).name||'Sản phẩm',p.name);
  app.innerHTML=`<div class="detail"><div class="pic t-${esc(p.category)}"><img src="${esc(p.image||productPhoto(p))}" alt="${esc(p.name)}"></div><div>
  <small class="mut">${esc(p.brand)} · Mã SP: ${esc(p.sku)}</small><h2>${esc(p.name)}</h2><p class="price" style="font-size:1.7rem">${vnd(p.price)}${sale(p)}</p>
@@ -52,9 +55,10 @@ async function paymentPage(){const data=JSON.parse(sessionStorage.getItem('n10_c
 async function route(){const[,a,b]=(location.hash||'#/').split('/');window.scrollTo(0,0);
  try{if(!a)await home();else if(a==='product')product(b);else if(a==='news')await news();else if(a==='post'||a==='page')await post(b);else if(a==='contact')contact();else if(a==='track')track();else if(a==='checkout')checkout();else if(a==='payment')await paymentPage();else await home()}catch(e){toast(e.message)}}
 window.onhashchange=()=>{if((location.hash||'').startsWith('#products'))return;route()};
-document.addEventListener('click',e=>{const t=e.target.closest('[data-add],[data-cat]'),d=t?t.dataset:{};
+document.addEventListener('click',e=>{const t=e.target.closest('[data-add],[data-cat],[data-brand]'),d=t?t.dataset:{};
  if(d.add)add(+d.add);
  if(d.cat!==undefined){F.cat=d.cat;$('#catMenu').hidden=true;if((location.hash||'#/')!=='#/')location.hash='#/';else home()}
+ if(d.brand){F.brand=d.brand;home().then(()=>document.querySelector('#products')?.scrollIntoView({behavior:'smooth',block:'start'}))}
  if(!e.target.closest('.catwrap'))$('#catMenu').hidden=true});
 $('#catBtn').onclick=()=>{const m=$('#catMenu');m.hidden=!m.hidden;$('#catBtn').setAttribute('aria-expanded',!m.hidden)};
 app.onchange=e=>{if(e.target.dataset.f){F[e.target.dataset.f]=e.target.value;home()}};
